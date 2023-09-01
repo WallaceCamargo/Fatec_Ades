@@ -1,0 +1,79 @@
+﻿{
+  "CodeGenerationMode": 3,
+  "ContextClassName": "AppDbContext",
+  "ContextNamespace": null,
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": null,
+  "OutputContextPath": null,
+  "OutputPath": "Models",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "APICatalago",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "T4TemplatePath": null,
+  "Tables": [
+    {
+      "Name": "USR_CSM.TB_DEMANDA",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_DEPARAMENTO",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_EMPRESA",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_FORMULARIO",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_FORMULARIO_SOLICITACAO",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_PERFIL",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_SISTEMA",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_SOLICITACAO",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_TIPO_RESPOSTA",
+      "ObjectType": 0
+    },
+    {
+      "Name": "USR_CSM.TB_USUARIO",
+      "ObjectType": 0
+    }
+  ],
+  "UiHint": "USR_CSM.PATIODEV",
+  "UncountableWords": null,
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDateOnlyTimeOnly": false,
+  "UseDbContextSplitting": false,
+  "UseFluentApiOnly": false,
+  "UseHandleBars": false,
+  "UseHierarchyId": false,
+  "UseInflector": true,
+  "UseLegacyPluralizer": false,
+  "UseManyToManyEntity": false,
+  "UseNoDefaultConstructor": false,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": false,
+  "UseSchemaFolders": false,
+  "UseSchemaNamespaces": false,
+  "UseSpatial": false,
+  "UseT4": false
+}

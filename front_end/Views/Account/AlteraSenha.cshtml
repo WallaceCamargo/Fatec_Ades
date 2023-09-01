@@ -1,0 +1,88 @@
+﻿@model front_end.Models.UsuarioViewModel
+
+
+<div class="authentication-bg min-vh-100">
+    <div class="bg-overlay bg-light"></div>
+    <div class="container">
+        <div class="d-flex flex-column min-vh-100">
+            <div class="row justify-content-center my-auto">
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <div class="p-3">
+                                <div class="mb-3 text-center mb-md-4">
+                                    <a href="index.html" class="d-block auth-logo">
+                                        <img src="assets/images/logo-dark.png" alt="" height="22"
+                                             class="auth-logo-dark">
+                                        <img src="assets/images/logo-light.png" alt="" height="22"
+                                             class="auth-logo-light">
+                                    </a>
+                                </div>
+                                <div class="mb-4 text-center">
+                                    <h5 class="mb-1">Alterar Senha</h5>
+                                    <p class="text-muted">Por favor preencha os campos com a sua nova senha e confirme !</p>
+                                </div>
+                                
+                                <form class="form-horizontal mt-3" asp-action="AlteraSenha">
+                                    <input type="hidden" asp-for="TokensendEmail" id="tokensendemail" />
+
+
+                                    <div class="form-password mb-3 auth-pass-inputgroup">
+                                        <div class="position-relative">
+                                            <input type="password" class="form-control" asp-for="Password" id="password-input" placeholder="Senha">
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                            <button type="button" class="btn btn-link position-absolute h-100 end-0 top-0 shadow-none" id="password-addon">
+                                                <i class="mdi mdi-eye-outline font-size-16 text-muted"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="form-password mb-3 auth-pass-inputgroup">
+                                        <div class="position-relative">
+                                            <input type="password" class="form-control" asp-for="ConfirmedPassword" id="password-input" placeholder="Confirmar Senha">
+                                            <span asp-validation-for="ConfirmedPassword" class="text-danger"></span>
+                                            <button type="button" class="btn btn-link position-absolute h-100 end-0 top-0 shadow-none" id="password-addon">
+                                                <i class="mdi mdi-eye-outline font-size-16 text-muted"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-4 text-center">
+                                            <button class="btn btn-primary w-100 rounded-pill"
+                                                    type="submit">
+                                                enviar
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </form>
+                                <!-- end -->
+                                
+                            </div>
+                        </div><!-- end card-body -->
+
+                    </div><!-- end card -->
+
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="text-center text-muted p-4">
+                        <p class="mb-0">
+                            ©
+                            <script>document.write(new Date().getFullYear())</script> Ecoporto Santos <i class="mdi mdi-heart text-danger"></i> by Wallace Camargo
+                        </p>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div>
+    </div><!-- end container -->
+</div>
+
+
+<style>
+    header {
+        display: none;
+    }
+</style>
